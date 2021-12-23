@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'></head>
+    <title>Maplytica</title>
+    <link href='https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css' rel='stylesheet'>
+    <style>
+        a {
+            color: #fc2f70;
+            text-decoration:  underline;
+        }
+        svg {
+            animation: 180s spin infinite;
+        }
+        .ring {
+            fill: none;
+            stroke: hsla(341, 97%, 59%, 0.3);
+            stroke-width: 1;
+        }
+        .ball {
+            fill: #fc2f70;
+            stroke: none;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body class='flex justify-center w-full h-screen bg-white text-black subpixel-antialiased'>
+    <div class='max-w-lg mx-auto text-center py-20 px-8 flex flex-col items-center'>
+        <svg width='30rem' class='block' viewBox='0 0 50 50' preserveAspectRatio='xMidYMid meet'>
+            <circle class='ring' cx='25' cy='25' r='20' />
+            <circle class='ball' cx='25' cy='5' r='1.5' />
+        </svg>
+        <h1 class='font-extrabold text-6xl mt-16'>maplytica</h1>
+        <h1 class='font-extrabold tracking-tight text-xl mt-8 mb-16'>Coming soon.</h1>
+        <a href='https://cdn.forms-content.sg-form.com/f0549149-c4fb-11eb-8c47-1a42beb689fa'>Like maps? Get notified when we launch our beta.</a>
+    </div>
+</body>
+</html>
